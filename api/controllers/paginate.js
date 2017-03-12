@@ -1,9 +1,9 @@
 var Blog = require('../../models/blog');
 
 module.exports.paginateBlogs = function(req, res, next) {
-	var perPage = req.query.perPage || 3;
-	var page = req.query.page || 1;
-	var sortName = req.query.sortName || "title";
+	var perPage = 3;
+	var page = 1;
+	var sortName = "title";
   var value = req.query.value || -1;
 	var output = {
 		data: null,
