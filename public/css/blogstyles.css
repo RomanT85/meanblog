@@ -1,0 +1,183 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #cccccc;
+	font-family: 'Nunito', sans-serif;
+}
+
+#headerBcg {
+	background-image: linear-gradient(rgba(15,15,15,0.6), rgba(170,170,170,0.6)), url("../images/img2.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	width: 100%;
+	position: relative;
+	top: 93.5px;
+}
+
+#header {
+	font-size: 25px;
+	color: #6c2f86;
+}
+
+.header h1 {
+	font-family: 'Nunito', sans-serif;
+	padding-top: 85px;
+	text-align: center;
+	font-size: 90px;
+	line-height: 90px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1.5px #434343;
+	font-weight: 300;
+}
+
+.red {
+	border-color: rgb(209, 5, 20);
+	color: rgb(209, 5, 20);
+}
+
+.green {
+	border-color: rgb(53, 209, 5);
+	color: rgb(53, 209, 5);
+}
+
+p {	
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5em;
+	font-size: 18px;
+}
+
+#logo {
+	width: 90px;
+}
+
+.ui.fixed.menu {
+	background: rgba(108, 47, 134, 0.9);
+	border: 1px solid #46105e;
+}
+
+.ui.fixed.menu a:hover,
+.ui.fixed.menu a:focus {
+	font-weight: bold;
+}
+
+.navbar {
+	height: 90px;
+}
+
+.menu a {
+	font-family: 'Nunito', sans-serif;
+	background: rgba(142, 68, 173, 0.8);
+	background: rgba(135, 45, 172, 0.8);
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.ui.pagination.menu {
+	position: relative;
+	left: 250px;
+}
+
+#posts {
+	margin-bottom: 30px;
+	margin-top: 120px; 
+}
+
+#posts .blogfooter {
+	color: rgb(170, 170, 170);
+}
+
+.meta span {
+	color: #8d5ea1;
+}
+
+button {
+	padding: 15px;
+	background: rgb(108, 47, 134);
+	border: rgb(70, 16, 94);
+	color: rgb(255, 255, 255);
+}
+
+button:hover,
+button:focus {
+	font-weight: bold;
+	background: rgb(70, 16, 94);
+	border: rgb(108, 47, 134);
+}
+
+/* landing slideshow styles */
+/*.slideshow {
+	background:linear-gradient(rgba(15, 15, 15, 0.5), rgba(170, 170, 170, 0.5) );
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    top: 90px;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:linear-gradient(rgba(15, 15, 15, 0.5), rgba(170, 170, 170, 0.5) );
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  	background-image: url("../images/img1.jpg");
+}
+.slideshow li:nth-child(2) {
+    background-image: url("../images/kazbegi.jpg");
+    animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+    background-image: url("../images/img2.jpg");
+    animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+    background-image: url("../images/img3.jpg");
+    animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+    background-image: url("../images/img4.jpg");
+    animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+} */
+
+/* Older browser support - class added by modernizr */
+/*.no-cssanimations .slideshow li {
+    opacity: 1;
+} */

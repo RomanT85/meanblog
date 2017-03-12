@@ -1,0 +1,19 @@
+<div class="ui top attached segment">
+	<div class="ui divided items">
+		<div class="item">
+			<div class="content">
+				<h2 id="header" class="header">{{vm.blog.title}}</h2>
+				<div class="meta">
+					<span>Julkaistu {{vm.blog.created | date: "dd, MM, yyyy (hh:mm)"}} , kirjoittanut {{vm.blog.author.name}}</span>
+				</div>
+				<div class="description">
+					<p>
+						{{vm.blog.bodytext}}
+					</p>
+					<p class="blogfooter">{{vm.blog.footer}}</p>
+					<a class="ui purple button" href="#/">Takaisin</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

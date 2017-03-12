@@ -1,0 +1,36 @@
+<div class="ui top attached segment">
+	<div class="ui pagination menu">
+		<a class="item" href="#/?page={{vm.pages.prev}}" ng-if="vm.pages.hasPrev == true">
+    		<i class="fa fa-chevron-left" aria-hidden="true"></i>
+  		</a>
+  		<a id="prev" class="disabled item" ng-if="vm.pages.hasPrev != true">
+    		<i class="fa fa-chevron-left" aria-hidden="true"></i>
+  		</a>
+  		<div class="item">
+    		<p>{{vm.pages.current}}</p>
+  		</div>
+  		<a class="item" href="#/?page={{vm.pages.next}}" ng-if="vm.pages.hasNext == true">
+    		<i class="fa fa-chevron-right" aria-hidden="true"></i>
+  		</a>
+  		<a id="next" class="disabled item" ng-if="vm.pages.hasNext != true">
+    		<i class="fa fa-chevron-right" aria-hidden="true"></i>
+  		</a>
+	</div>
+	<div class="ui divided items">
+		<div class="item" ng-repeat="blog in vm.blogs">
+			<div class="content">
+				<a id="header" class="header" href="#/">{{blog.title}}</a>
+				<div class="meta">
+					<span>Julkaistu {{blog.created | date: "dd, MM, yyyy (hh:mm)"}} , kirjoittanut {{blog.author.name}}</span>
+				</div>
+				<div class="description">
+					<p>
+						{{blog.bodytext.substring(0, 100)}}...
+					</p>
+					<p class="blogfooter">{{blog.footer}}</p>
+					<a class="ui purple button" href="#/blog/{{blog._id}}">Avaa</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
