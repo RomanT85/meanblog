@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dburl = 'mongodb://Romka7:meanblog123@ds155718.mlab.com:55718/meanblog';
+var dburl = 'your own database url';
 
 mongoose.connect(dburl);
 
