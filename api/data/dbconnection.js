@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var dburl = 'mongodb://mana-ry:Malinowski1922@ds123370.mlab.com:23370/manary-blog';
+var dburl = 'your own mongoDB url';
 
 var _connection = null;
 
