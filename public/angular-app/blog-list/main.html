@@ -19,16 +19,18 @@
 	<div class="ui divided items">
 		<div class="item" ng-repeat="blog in vm.blogs">
 			<div class="content">
-				<a id="header" class="header" href="#/">{{blog.title}}</a>
+				<a id="header" class="header" href="#/">
+				{{blog.title}}</a>
 				<div class="meta">
-					<span>Julkaistu {{blog.created | date: "dd, MM, yyyy (hh:mm)"}} , kirjoittanut {{blog.author.name}}</span>
+					<span>Published on: {{blog.created | date: "dd, MM, yyyy (hh:mm)"}} , by: {{blog.author.name}}</span>
 				</div>
+				<h3>{{blog.subheading}}</h3>
 				<div class="description">
 					<p>
 						{{blog.bodytext.substring(0, 100)}}...
 					</p>
 					<p class="blogfooter">{{blog.footer}}</p>
-					<a class="ui purple button" href="#/blog/{{blog._id}}">Avaa</a>
+					<a class="ui purple button" href="#/blog/{{blog._id}}">Read Blog</a>
 				</div>
 			</div>
 		</div>

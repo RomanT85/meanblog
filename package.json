@@ -1,7 +1,7 @@
 {
-  "name": "mana_ry-blogi",
+  "name": "meanblog",
   "version": "1.0.0",
-  "description": "Mana ry blogi",
+  "description": "MEAN Blog",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

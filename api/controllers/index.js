@@ -23,13 +23,14 @@ module.exports.postBlog = function(req, res) {
 	Blog
 	.create({
 		title: req.body.title,
+		image: req.body.image,
 		subheading: req.body.subheading,
 		bodytext: req.body.bodytext,
 		footer: req.body.footer,
 		created: Date.now()
 	},
 	function(err, newBlog) {
-		if(err) res.status(400, err);
+		if(err) return res.status(400, err);
 		res
 		.status(200)
 		.json(newBlog)

@@ -1,6 +1,6 @@
 {
-  "name": "mana_ry-blogi",
-  "description": "Mana ry blogi",
+  "name": "meanblog",
+  "description": "MEAN Blog",
   "main": "server.js",
   "authors": [
     "Roman Tuomisto"
@@ -12,7 +12,7 @@
     "MongoDB",
     "ExpressJs"
   ],
-  "homepage": "www.manaryblogi.fi",
+  "homepage": "www.meanblog.fi",
   "private": true,
   "ignore": [
     "**/.*",

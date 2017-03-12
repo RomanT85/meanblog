@@ -21,7 +21,14 @@ body {
 	top: 93.5px;
 }
 
-#header {
+#blogDisplay {
+	text-align: center;
+	padding: 15px;
+}
+
+#header, #Viewheader {
+	padding-top: 15px;
+	padding-bottom: 15px;
 	font-size: 25px;
 	color: #6c2f86;
 }
@@ -54,7 +61,8 @@ p {
 }
 
 #logo {
-	width: 90px;
+	width: 120px;
+	height: 90px;
 }
 
 .ui.fixed.menu {
@@ -97,15 +105,16 @@ p {
 	color: #8d5ea1;
 }
 
-button {
+a.ui.button {
+	margin-top: 15px;
 	padding: 15px;
 	background: rgb(108, 47, 134);
 	border: rgb(70, 16, 94);
 	color: rgb(255, 255, 255);
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
 	font-weight: bold;
 	background: rgb(70, 16, 94);
 	border: rgb(108, 47, 134);
@@ -181,3 +190,13 @@ button:focus {
 /*.no-cssanimations .slideshow li {
     opacity: 1;
 } */
+
+footer {
+	padding-top: 15px;
+	font-size: 22px;
+	line-height: 22px;
+	height: 45px;
+	text-align: center;
+	color: white;
+	background: rgb(15,15,15);
+}

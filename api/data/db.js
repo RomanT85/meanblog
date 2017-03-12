@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dburl = 'mongodb://mana-ry:Malinowski1922@ds123370.mlab.com:23370/manary-blog';
+var dburl = 'mongodb://Romka7:meanblog123@ds155718.mlab.com:55718/meanblog';
 
 mongoose.connect(dburl);
 
